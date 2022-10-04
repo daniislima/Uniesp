@@ -1,0 +1,15 @@
+numero = int(input("Digite um numero: "))
+Tot = 0
+
+for c in range (1, numero + 1):
+    if numero % c == 0:
+        print("\033[33m", end="")
+        Tot += 1
+    else:
+        print("\033[31m", end="")
+    print("{} ".format(c), end="")
+    
+if Tot == 2:
+    print("E por isso ele é PRIMO!")
+else:
+    print("E por isso ele não é PRIMO!")
